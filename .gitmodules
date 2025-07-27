@@ -4,3 +4,6 @@
 [submodule "chatapp-with-voice-and-openai-outline"]
 	path = chatapp-with-voice-and-openai-outline
 	url = https://github.com/ibm-developer-skills-network/bkrva-chatapp-with-voice-and-openai-outline
+[submodule "build_chatbot_without_open_ai"]
+	path = build_chatbot_without_open_ai
+	url = https://github.com/zubairAbubakar/build_chatbot_without_open_ai
