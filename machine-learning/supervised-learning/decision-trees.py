@@ -1,13 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
-import sns
 
-from sklearn import preprocessing, metrics
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import jaccard_score, f1_score, log_loss, accuracy_score
+from sklearn import metrics
 from sklearn.model_selection import cross_val_score, train_test_split
-from sklearn.multiclass import OneVsOneClassifier
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, LabelEncoder
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 
