@@ -10,8 +10,11 @@ from sklearn.tree import DecisionTreeClassifier, plot_tree, DecisionTreeRegresso
 from sklearn.preprocessing import normalize
 from sklearn.utils import compute_sample_weight
 
-file_name= "creditcard.csv"
-raw_data = pd.read_csv(file_name)
+# download the dataset
+url= "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-ML0101EN-SkillsNetwork/labs/Module%203/data/creditcard.csv"
+
+# read the input data
+raw_data=pd.read_csv(url)
 
 # get the set of distinct classes
 labels = raw_data.Class.unique()
