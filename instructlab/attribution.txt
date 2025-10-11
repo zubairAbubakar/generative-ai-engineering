@@ -1,0 +1,3 @@
+Title of work: Tokenization examples by wfulmyk
+License of the work: CC-BY-SA-4.0
+Creator names: Wojciech "Victor" Fulmyk, with the help of GenAI

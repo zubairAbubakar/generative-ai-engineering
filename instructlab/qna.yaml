@@ -1,0 +1,175 @@
+version: 2
+task_description: |
+    Teach an LLM to tokenize.
+created_by: zubairAbubakar # Use your GitHub username; only one creator supported
+seed_examples:
+  - question: |
+      Tokenize "The quick brown fox jumps over the lazy dog."
+    answer: |
+      ['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog', '.']
+  - question: |
+      Tokenize "I love to play football on weekends."
+    answer: |
+      ['I', 'love', 'to', 'play', 'football', 'on', 'weekends', '.']
+  - question: |
+      Tokenize "How much wood would a woodchuck chuck if a woodchuck could chuck wood?"
+    answer: |
+      ['How', 'much', 'wood', 'would', 'a', 'woodchuck', 'chuck', 'if', 'a', 'woodchuck', 'could', 'chuck', 'wood', '?']
+  - question: >
+      Tokenize "Artificial intelligence is revolutionizing the world,
+      and becoming more relevant every day."
+    answer: >
+      ['Artificial', 'intelligence', 'is', 'revolutionizing', 'the', 'world', ',',
+      'and', 'becoming', 'more', 'relevant', 'every', 'day', '.']
+  - question: |
+      Tokenize "The rain in Spain stays mainly in the plain."
+    answer: |
+      ['The', 'rain', 'in', 'Spain', 'stays', 'mainly', 'in', 'the', 'plain', '.']
+  - question: |
+      Tokenize "To be or not to be, that is the question."
+    answer: |
+      ['To', 'be', 'or', 'not', 'to', 'be', ',', 'that', 'is', 'the', 'question', '.']
+  - question: |
+      Tokenize "A journey of a thousand miles begins with a single step."
+    answer: |
+      ['A', 'journey', 'of', 'a', 'thousand', 'miles', 'begins', 'with', 'a', 'single', 'step', '.']
+  - question: |
+      Tokenize "All that glitters is not gold."
+    answer: |
+      ['All', 'that', 'glitters', 'is', 'not', 'gold', '.']
+  - question: |
+      Tokenize "Beauty is in the eye of the beholder."
+    answer: |
+      ['Beauty', 'is', 'in', 'the', 'eye', 'of', 'the', 'beholder', '.']
+  - question: |
+      Tokenize "Actions speak louder than words."
+    answer: |
+      ['Actions', 'speak', 'louder', 'than', 'words', '.']
+  - question: |
+      Tokenize "The pen is mightier than the sword."
+    answer: |
+      ['The', 'pen', 'is', 'mightier', 'than', 'the', 'sword', '.']
+  - question: |
+      Tokenize "When in Rome, do as the Romans do."
+    answer: |
+      ['When', 'in', 'Rome', ',', 'do', 'as', 'the', 'Romans', 'do', '.']
+  - question: |
+      Tokenize "The early bird catches the worm."
+    answer: |
+      ['The', 'early', 'bird', 'catches', 'the', 'worm', '.']
+  - question: |
+      Tokenize "A picture is worth a thousand words."
+    answer: |
+      ['A', 'picture', 'is', 'worth', 'a', 'thousand', 'words', '.']
+  - question: |
+      Tokenize "Better late than never."
+    answer: |
+      ['Better', 'late', 'than', 'never', '.']
+  - question: |
+      Tokenize "Birds of a feather flock together."
+    answer: |
+      ['Birds', 'of', 'a', 'feather', 'flock', 'together', '.']
+  - question: |
+      Tokenize "A watched pot never boils."
+    answer: |
+      ['A', 'watched', 'pot', 'never', 'boils', '.']
+  - question: |
+      Tokenize "Don't count your chickens before they hatch."
+    answer: |
+      ['Do', 'not', 'count', 'your', 'chickens', 'before', 'they', 'hatch', '.']
+  - question: |
+      Tokenize "Every cloud has a silver lining."
+    answer: |
+      ['Every', 'cloud', 'has', 'a', 'silver', 'lining', '.']
+  - question: |
+      Tokenize "Fortune favors the bold."
+    answer: |
+      ['Fortune', 'favors', 'the', 'bold', '.']
+  - question: |
+      Tokenize "Honesty is the best policy."
+    answer: |
+      ['Honesty', 'is', 'the', 'best', 'policy', '.']
+  - question: |
+      Tokenize "If it ain't broke, don't fix it."
+    answer: |
+      ['If', 'it', 'ain', "'", 't', 'broke', ',', 'do', 'not', 'fix', 'it', '.']
+  - question: |
+      Tokenize "Laughter is the best medicine."
+    answer: |
+      ['Laughter', 'is', 'the', 'best', 'medicine', '.']
+  - question: |
+      Tokenize "Necessity is the mother of invention."
+    answer: |
+      ['Necessity', 'is', 'the', 'mother', 'of', 'invention', '.']
+  - question: |
+      Tokenize "Practice makes perfect."
+    answer: |
+      ['Practice', 'makes', 'perfect', '.']
+  - question: |
+      Tokenize "Time flies when you're having fun."
+    answer: |
+      ['Time', 'flies', 'when', 'you', 'are', 'having', 'fun', '.']
+  - question: |
+      Tokenize "You can't judge a book by its cover."
+    answer: |
+      ['You', 'can', 'not', 'judge', 'a', 'book', 'by', 'its', 'cover', '.']
+  - question: |
+      Tokenize "Absence makes the heart grow fonder."
+    answer: |
+      ['Absence', 'makes', 'the', 'heart', 'grow', 'fonder', '.']
+  - question: |
+      Tokenize "A penny saved is a penny earned."
+    answer: |
+      ['A', 'penny', 'saved', 'is', 'a', 'penny', 'earned', '.']
+  - question: |
+      Tokenize "An apple a day keeps the doctor away."
+    answer: |
+      ['An', 'apple', 'a', 'day', 'keeps', 'the', 'doctor', 'away', '.']
+  - question: |
+      Tokenize "Beggars can't be choosers."
+    answer: |
+      ['Beggars', 'can', 'not', 'be', 'choosers', '.']
+  - question: |
+      Tokenize "Cleanliness is next to godliness."
+    answer: |
+      ['Cleanliness', 'is', 'next', 'to', 'godliness', '.']
+  - question: |
+      Tokenize "Don't bite the hand that feeds you."
+    answer: |
+      ['Do', 'not', 'bite', 'the', 'hand', 'that', 'feeds', 'you', '.']
+  - question: |
+      Tokenize "Don't put all your eggs in one basket."
+    answer: |
+      ['Do', 'not', 'put', 'all', 'your', 'eggs', 'in', 'one', 'basket', '.']
+  - question: |
+      Tokenize "Every dog has its day."
+    answer: |
+      ['Every', 'dog', 'has', 'its', 'day', '.']
+  - question: |
+      Tokenize "Good things come to those who wait."
+    answer: |
+      ['Good', 'things', 'come', 'to', 'those', 'who', 'wait', '.']
+  - question: |
+      Tokenize "Haste makes waste."
+    answer: |
+      ['Haste', 'makes', 'waste', '.']
+  - question: |
+      Tokenize "If you can't beat them, join them."
+    answer: |
+      ['If', 'you', 'can', 'not', 'beat', 'them', ',', 'join', 'them', '.']
+  - question: |
+      Tokenize "It's always darkest before the dawn."
+    answer: |
+      ['It', 'is', 'always', 'darkest', 'before', 'the', 'dawn', '.']
+  - question: |
+      Tokenize "Knowledge is power."
+    answer: |
+      ['Knowledge', 'is', 'power', '.']
+  - question: |
+      Tokenize "Look before you leap."
+    answer: |
+      ['Look', 'before', 'you', 'leap', '.']
+  - question: |
+      Tokenize "No pain, no gain."
+    answer: |
+      ['No', 'pain', ',', 'no', 'gain', '.']
